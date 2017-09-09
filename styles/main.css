@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flex-parent {
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-child {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.flex-child.left {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-child.right {
+  background-color: yellow;
+}
+
+.mini {
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar .shopping-cart {
+  color: white;
+  font-size: 45px;
+}
+
+.hero {
+  height: 500px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1483347756197-71ef80e95f73?dpr=1&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+}
+
+.hero .title {
+  color: white;
+  font-size: 60px;
+}
+
+.description {
+display: inline-block;
+padding: 20px;
+margin: 0 auto;
+}
+
+.instructions {
+  display: inline-block;
+  padding: 20px;
+  margin: 0 auto;
+  color: white;
+}
+
+.test {
+  text-align: center;
+}
+
+.test-item {
+  color: green;
+}
+
+.footer {
+  background-color: black;
+  display: block;
+}
+
+.blog-item {
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+.footer-item {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  padding: 25px;
+}
+
+.footer-item.contact {
+  color: white;
+}
+
+.footer-item.credits {
+  color: white;
+}
+
+@media (min-width:1024px) {
+  .footer-item {
+    font-size: 16px;
+    width: calc(50%-50px);
+  }
+
+  .content .description {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(50% - 45px);
+  }
+
+.content .instructions {
+  background-color: purple;
+  vertical-align: top;
+  display: inline-block;
+  width: calc(50% - 45px);
+}
+
+  .content .blog {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .blog-item {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+  }
+
+}
