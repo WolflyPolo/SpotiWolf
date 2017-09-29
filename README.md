@@ -1,2 +1,4 @@
 # SpotiWolf
 A short html/css program to test my knowledge while trying to recreate the Spotify Landing Page. 
+
+[Changes in progress to make a new version/2nd commit]
